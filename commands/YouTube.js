@@ -33,7 +33,7 @@ france({
   const { ms, repondre, arg } = commandeOptions;
      
   if (!arg[0]) {
-    repondre("wich song do you want.");
+    repondre("which song do you want?");
     return;
   }
 
@@ -145,7 +145,7 @@ _*DOWNLOADING...*_\n\n`
 
       fileStream.on('finish', () => {
         // Envoi du fichier vidéo en utilisant l'URL du fichier local
-        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*FLASH-MD*", gifPlayback: false }, { quoted: ms });
+        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*ARYA*", gifPlayback: false }, { quoted: ms });
       });
 
       fileStream.on('error', (error) => {
